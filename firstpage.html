@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+</head>
+
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="navbar">
+        <img src="todologo.jpeg" alt="" id="logo" width="100px" height="100px">
+    <h3>WELCOME TO OUR TODO LIST</h3>
+    
+    </div>
+    <!-- Side Bar menu -->
+    <div id="sidebar" onclick="togglemenu()">
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>View Timetable</li>
+            <li>Your Profile</li>
+            <li>Show Progress Report</li>
+            <li>Can't Stick to your Schedule?<br><a href="https://www.youtube.com//results?search_query=motivational+video" target="_blank">Click Here</a> </li>
+        </ul>
+            
+    </div>
+    </body>
+    <br><br><br>
+    
+
+    <div class="input1">
+        <h4>Enter Your Sleeping Hours</h4>
+        <input type="time" id="ip1"> to
+        <input type="time" id="ip1">
+        <button id="submit1">Submit</button>
+    </div> 
+    
+    <div class="input2">
+    <h4>Enter Your Busy Hours</h4>
+    <input type="time"> to
+    <input type="time">
+    <button id="btn">Add More Busy Hours</button>
+</div>
+<br><br><br>
+<div class="shorttermtasks">
+    <h4 >Add a Short Term Task</h4>
+    <input type="text" id="tt1" placeholder="Add Task Name">
+    <input type="number" id="tt1" placeholder="Number Of Hours">
+    
+    
+    <button>Submit</button>
+
+</div>
+<div class="longtermtasks">
+    <h4 >Add a Long Term Task</h4>
+    <input type="text" id="tt2" placeholder="Add Task Name">
+    <input type="date" id="tt2">
+    <input type="number" id="tt2" placeholder="Enter Number of Hours ">
+
+    
+    
+    <button id="submit2">Submit</button>
+
+</div>
+
+
+
+
+
+<script>
+
+function togglemenu(){
+    document.getElementById("sidebar").classList.toggle('active');
+}
+</script>
+
+
+
+</body>
+
+</html>
